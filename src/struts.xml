@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+   <constant name="struts.custom.i18n.resources" value="mess"/>
+   <constant name="struts.custom.i18n.encoding" value="GBK"/>
+	<package name="meng" extends="struts-default">
+		<action name="login" class="struts2.LoginAction">
+		<result name="input" >/welcome.jsp</result>
+		<result name="success" >/welcome.jsp</result>
+		<result name="error" >/error.jsp</result>
+		</action>
+	</package>
+</struts>
